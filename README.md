@@ -14,6 +14,7 @@ The model includes an upper ocean box of 50m thickness and the thermocline box o
 
 ## Numerical integration
 The four equations above are numerically integrated using Euler Forward scheme with a 5-day timestep for 100 years. The last 10 years is used for analysis. 
+
 ![alt text](https://github.com/takaito1/car1/blob/main/fig1.jpg?raw=true)
 
 ## Transformation to the AR-1 framework
@@ -22,4 +23,6 @@ The above governing equation for surface C can be transformed to the AR-1 model 
 - Net Community Production, $NCP(t) = k_{bio}R_{C:P}Ps$
 - Surface carbon transport convergence, $SCTC(t) = \frac{w}{h}(Cd-Cs)$
 - AR-1 equation: $\frac{dF}{dt} = -\lambda F + G [ \alpha NCP(t) - \alpha SCTC(t) ]$ where $\alpha$ is set by the carbonate chemistry as $\frac{\partial CO2}{\partial C}$ and $\lambda$ is the air-sea gas transfer inverse timescale and is equal to $\frac{G \alpha}{h}$
+
+![alt text](https://github.com/takaito1/car1/blob/main/fig2.jpg?raw=true)
 
