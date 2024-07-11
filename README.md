@@ -17,8 +17,8 @@ The four equations above are numerically integrated using Euler Forward scheme w
 
 ## Transformation to the AR-1 framework
 The governing equations can be transformed to the AR-1 model as follows. 
-- Air-sea CO2 flux, $F(t) = G\,K_H(pCO2a - pCO2(t))$. F(t) is positive into the surface ocean. 
+- Air-sea CO2 flux, $F(t) = GK_H(pCO2a - pCO2(t))$. F(t) is positive into the surface ocean. 
 - Net Community Production, $NCP(t) = k_{bio}R_{C:P}Ps$
 - Surface transport convergence, $STC(t) = \frac{w}{h}(Cd-Cs)$
-- $\frac{dF}{dt} = -\lambda F + G\,alpha\,NCP(t) - G\,alpha\,STC(t)$
+- $\frac{dF}{dt} = -\lambda F + G \alpha NCP(t) - G \alpha STC(t)$
 
