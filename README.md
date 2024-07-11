@@ -12,3 +12,6 @@ The model includes an upper ocean box of 50m thickness and the thermocline box o
 - Surface C $\frac{dCs}{dt} = \frac{w}{h}(Cd-Cs) - k_{bio}R_{C:P}Ps - GK_H(pCO2s - pCO2a)$
 - Deep C $\frac{dCd}{dt} = -\frac{w}{H}(Cd-Cs) + k_{bio}\frac{h}{H}R_{C:P}Ps$
 
+## Numerical integration
+The four equations above are numerically integrated using Euler Forward scheme with a 5-day timestep for 100 years. The last 10 years is used for analysis. 
+
