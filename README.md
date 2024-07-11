@@ -16,7 +16,7 @@ The model includes an upper ocean box of 50m thickness and the thermocline box o
 The four equations above are numerically integrated using Euler Forward scheme with a 5-day timestep for 100 years. The last 10 years is used for analysis. 
 
 ## Transformation to the AR-1 framework
-The governing equations can be transformed to the AR-1 model as follows. 
+The above governing equation for surface C can be transformed to the AR-1 model as follows. 
 - Air-sea CO2 flux, $F(t) = GK_H(pCO2a - pCO2(t))$. F(t) is positive into the surface ocean. 
 - Net Community Production, $NCP(t) = k_{bio}R_{C:P}Ps$
 - Surface transport convergence, $STC(t) = \frac{w}{h}(Cd-Cs)$
