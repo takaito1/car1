@@ -9,4 +9,6 @@ The model includes an upper ocean box of 50m thickness and the thermocline box o
 ## The governing equations are: 
 - Surface P $\frac{dPs}{dt} = \frac{w}{h}(Pd-Ps) - k_{bio}Ps$
 - Deep P $\frac{dPd}{dt} = -\frac{w}{H}(Pd-Ps) + k_{bio}\frac{h}{H}Ps$
+- Surface C $\frac{dCs}{dt} = \frac{w}{h}(Cd-Cs) - k_{bio}R_{C:P}Ps - GK_H(pCO2s - pCO2a)$
+- Deep C $\frac{dCd}{dt} = -\frac{w}{H}(Cd-Cs) + k_{bio}\frac{h}{H}R_{C:P}Ps$
 
