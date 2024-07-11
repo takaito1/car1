@@ -20,5 +20,5 @@ The governing equations can be transformed to the AR-1 model as follows.
 - Air-sea CO2 flux, $F(t) = GK_H(pCO2a - pCO2(t))$. F(t) is positive into the surface ocean. 
 - Net Community Production, $NCP(t) = k_{bio}R_{C:P}Ps$
 - Surface transport convergence, $STC(t) = \frac{w}{h}(Cd-Cs)$
-- $\frac{dF}{dt} = -\lambda F + G \left\{ \alpha NCP(t) - \alpha STC(t) \right\}$
+- $\frac{dF}{dt} = -\lambda F + G { \alpha NCP(t) - \alpha STC(t) }$
 
