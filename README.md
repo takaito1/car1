@@ -14,6 +14,7 @@ The model includes an upper ocean box of 50m thickness and the thermocline box o
 
 ## Numerical integration
 The four equations above are numerically integrated using Euler Forward scheme with a 5-day timestep for 100 years. The last 10 years is used for analysis. 
+![alt text](https://github.com/takaito1/car1/blob/main/fig1.jpg?raw=true)
 
 ## Transformation to the AR-1 framework
 The above governing equation for surface C can be transformed to the AR-1 model as follows. 
