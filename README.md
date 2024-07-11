@@ -9,9 +9,16 @@ The model includes an upper ocean box of 50m thickness and the thermocline box o
 ## The governing equations are: 
 - Surface P $\frac{dPs}{dt} = \frac{w}{h}(Pd-Ps) - k_{bio}Ps$
 - Deep P $\frac{dPd}{dt} = -\frac{w}{H}(Pd-Ps) + k_{bio}\frac{h}{H}Ps$
-- Surface C $\frac{dCs}{dt} = \frac{w}{h}(Cd-Cs) - k_{bio}R_{C:P}Ps - GK_H(pCO2s - pCO2a)$
+- Surface C $\frac{dCs}{dt} = \frac{w}{h}(Cd-Cs) - k_{bio}R_{C:P}Ps - GK_H(pCO2 - pCO2atm)$
 - Deep C $\frac{dCd}{dt} = -\frac{w}{H}(Cd-Cs) + k_{bio}\frac{h}{H}R_{C:P}Ps$
 
 ## Numerical integration
 The four equations above are numerically integrated using Euler Forward scheme with a 5-day timestep for 100 years. The last 10 years is used for analysis. 
+
+## Transformation to the AR-1 framework
+The governing equations can be transformed to the AR-1 model as follows. 
+- Air-sea CO2 flux, $F(t) = G\,K_H(pCO2a - pCO2(t))$. F(t) is positive into the surface ocean. 
+- Net Community Production, $NCP(t) = k_{bio}R_{C:P}Ps$
+- Surface transport convergence, $STC(t) = \frac{w}{h}(Cd-Cs)$
+- $\frac{dF}{dt} = -\lambda F + G\,alpha\,NCP(t) - G\,alpha\,STC(t)$
 
