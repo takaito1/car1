@@ -19,6 +19,6 @@ The four equations above are numerically integrated using Euler Forward scheme w
 The above governing equation for surface C can be transformed to the AR-1 model as follows. 
 - Air-sea CO2 flux, $F(t) = GK_H(pCO2a - pCO2(t))$. F(t) is positive into the surface ocean. 
 - Net Community Production, $NCP(t) = k_{bio}R_{C:P}Ps$
-- Surface transport convergence, $STC(t) = \frac{w}{h}(Cd-Cs)$
-- AR-1 equation: $\frac{dF}{dt} = -\lambda F + G [ \alpha NCP(t) - \alpha STC(t) ]$ where $\alpha$ is set by the carbonate chemistry as $\frac{\partial CO2}{\partial C}$ and $\lambda$ is the air-sea gas transfer inverse timescale and is equal to $\frac{G \alpha}{h}$
+- Surface carbon transport convergence, $SCTC(t) = \frac{w}{h}(Cd-Cs)$
+- AR-1 equation: $\frac{dF}{dt} = -\lambda F + G [ \alpha NCP(t) - \alpha SCTC(t) ]$ where $\alpha$ is set by the carbonate chemistry as $\frac{\partial CO2}{\partial C}$ and $\lambda$ is the air-sea gas transfer inverse timescale and is equal to $\frac{G \alpha}{h}$
 
